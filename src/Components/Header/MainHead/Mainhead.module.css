@@ -1,28 +1,99 @@
 .mainhead {
     width: 100%;
-    text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
+    max-height: 960px;
+    height: 960px;
+    text-align: center;
+    justify-content: center;
+    align-items: flex-start;
 }
+
+@media (max-width: 1024px) {
+    .mainhead {
+        grid-template-columns: 1fr;
+        position: relative;
+
+    }
+
+    .maininfo {
+        position: absolute;
+        width: 100%;
+
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        display: inline-block;
+        margin-top: 0;
+        padding: 16px;
+
+    }
+    .reactLogoWrapper, .reactLogoWrapper img {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .mainhead {
+        height: 640px;
+    }
+
+    .imgWrapper img, .imgWrapper {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 425px) {
+    .mainhead {
+        height: 480px;
+
+    }
+}
+.info {
+    opacity: 1;
+}
+
+.reactLogoWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.reactLogoWrapper img {
+    margin: 32px 0;
+    width: 128px;
+    filter: blur(5px) grayscale(10%);;
+    transition: all .5s;
+}
+
+.reactLogoWrapper img:hover {
+    transform: scale(1.1);
+    filter: blur(2px) grayscale(10%);;
+}
+
 
 .imgWrapper {
     width: 100%;
     height: 100%;
-
+    opacity: 0;
+    animation: fadeIn ease 2s;
+    animation-fill-mode: forwards;
+    overflow: hidden;
 }
 
-.imgWrapper img{
+.imgWrapper img {
     max-width: 100%;
-    max-height: 960px;
-    margin-top: -80px;
+    height: 100%;
+
+
     transform: scale(0.9);
     filter: blur(2px) grayscale(10%);
     transition: all .5s ease-out;
 }
 
-.imgWrapper img:hover{
-    max-width: 100%;
+.imgWrapper img:hover {
     max-height: 960px;
     margin-top: -80px;
     transform: scale(1);
@@ -32,11 +103,27 @@
 
 
 .maininfo {
-    display: inline-block;
+
     z-index: 1;
-    margin-top: -196px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 64px;
+    opacity: 0;
+    animation: fadeIn ease 2s;
+    animation-fill-mode: forwards;
+    padding: 16px;
+
 }
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 
 .maininfo h1 {
@@ -44,16 +131,21 @@
     color: #fff;
     font-size: 64px;
     font-weight: 700;
+    margin: 0;
+    padding: 0;
 }
 
 
-
-.maininfo h2,span {
+.maininfo h2, span {
     z-index: 1;
     color: #fff;
     font-size: 48px;
     font-weight: 500;
     opacity: .9;
+    margin: 0;
+    margin-top: 16px;
+
+    padding: 0;
 }
 
 @keyframes roLeftAnimation {
@@ -118,6 +210,8 @@
 
 
 .maininfo button {
+    margin-top: 32px;
+
     z-index: 1;
     background: none;
     color: #fff;
@@ -130,7 +224,7 @@
 }
 
 .maininfo button:hover {
-   cursor: pointer;
+    cursor: pointer;
     transform: scale(1.1);
     box-shadow: 15px 10px 10px #20201f;
     background-color: #fff;
@@ -151,6 +245,42 @@
     padding: 8px 16px;
     box-shadow: 10px 5px 5px #20201f;
     transition: all .5s;
+}
 
+@media (max-width: 1024px) {
+    .maininfo {
+        background-color: rgba(72, 60, 50, .3);
 
+    }
+
+}
+
+@media (max-width: 768px) {
+    .maininfo h1 {
+        font-size: 48px;
+    }
+
+    .maininfo h2, span {
+        font-size: 32px;
+    }
+
+    .maininfo button {
+        font-size: 24px;
+
+    }
+}
+
+@media (max-width: 425px) {
+    .maininfo h1 {
+        font-size: 32px;
+    }
+
+    .maininfo h2, span {
+        font-size: 24px;
+    }
+
+    .maininfo button {
+        font-size: 16px;
+
+    }
 }

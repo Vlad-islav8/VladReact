@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from './Navbar.module.css'
 import tgIcon from './img/tgIcon.svg'
 import vkIcon from './img/vkIcon.svg'
 import cont from '../../../container.module.css'
 
 export function Navbar() {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
     return (
         <div>
             <nav className={styles.navbar}>
@@ -23,15 +29,29 @@ export function Navbar() {
                     </div>
 
                     <div className={styles.contacts}>
-                        <a className={`${styles.logoWrapper} ${styles.tgLogo}`} href='https://vk.com/vlados.fedorov'
+                        <a className={`${styles.logoWrapper} ${styles.tgLogo}`} href='https://t.me/Mylitlezummer '
                            target="_blank">
                             <img src={tgIcon} alt='tg'/>
                         </a>
-                        <a className={`${styles.logoWrapper} ${styles.vkLogo}`} href='https://t.me/Mylitlezummer'
+                        <a className={`${styles.logoWrapper} ${styles.vkLogo}`} href='https://vk.com/vlados.fedorov'
                            target="_blank">
                             <img src={vkIcon} alt='vk'/>
                         </a>
                     </div>
+                <div className={styles.burgerMenu}>
+                    <button className={styles.burgerButton} onClick={toggleMenu}>
+                        <span className={styles.burgerLine}></span>
+                        <span className={styles.burgerLine}></span>
+                        <span className={styles.burgerLine}></span>
+                    </button>
+                    <div className={`${styles.menu} ${isMenuOpen ? styles.open : ''}`}>
+                        <a href='#'>Кнопка</a>
+                        <a href='#'>Кнопка</a>
+                        <a href='#'>Кнопка</a>
+                        <a href='#'>Кнопка</a>
+                        <a href='#'>Кнопка</a>
+                    </div>
+                </div>
                 </div>
             </nav>
         </div>
