@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from './Navbar.module.css'
-import tgIcon from './img/tgIcon.svg'
-import vkIcon from './img/vkIcon.svg'
+import tgIcon from '../../../img/Header/Navbar/tgIcon.svg'
+import vkIcon from '../../../img/Header/Navbar/vkIcon.svg'
 import cont from '../../../container.module.css'
 
 export function Navbar() {

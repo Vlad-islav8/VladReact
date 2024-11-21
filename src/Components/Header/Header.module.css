@@ -1,5 +1,6 @@
 .header {
     background-color: #141413;
-    height: auto;
+    height: 100vh;
+    overflow: hidden;
 }
 

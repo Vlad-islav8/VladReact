@@ -1,0 +1,190 @@
+.aboutme {
+    background-color: #f9f9f9;
+    border-radius: 45px 45px 0 0;
+    transition: all 2s;
+    z-index: 99999;
+}
+
+.aboutme:hover {
+    transform: translateY(-128px);
+}
+
+.aboutme:hover .aboutmeWrapper{
+    transform: scale(1);
+}
+
+.aboutme:hover .aboutmeHead span{
+    font-size: 32px;
+
+}
+
+.aboutmeWrapper {
+    transform: scale(0);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    transition: transform 2s;
+}
+
+@media(max-width: 768px) {
+    .aboutmeWrapper {
+        grid-template-columns: 1fr;
+        transform: scale(1);
+    }
+
+}
+
+
+.imageWrapper {
+    text-align: center;
+}
+
+.imageWrapper img {
+    width: 80%;
+    height: 500px;
+    border-radius: 32px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    filter: blur(1px);
+    transition: all .5s;
+}
+
+.imageWrapper img:hover {
+    border-radius: 16px;
+    filter: blur(0);
+}
+
+.textWrapper {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.aboutmeHead {
+    display: block;
+    padding: 48px 0;
+    text-align: center;
+}
+
+
+.aboutme:hover .aboutmeHead span:before {
+    transition: all 2s;
+    width: 100%;
+}
+
+.aboutmeHead span {
+    font-size: 64px;
+    font-weight: 600;
+    color: #333;
+    position: relative;
+    transition: width 1s ease-out, font-size 2s;
+
+
+
+}
+
+.aboutmeHead span:before {
+    width: 0;
+    content: '';
+    color: black;
+    background-color: black;
+    height: 5px;
+    position: absolute;
+    text-align: center;
+    bottom: -10px;
+    transition: width 1s ease-out;
+    border-radius: 10px;
+}
+
+.infoList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.infoListItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: inherit;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.infoListItem:hover img {
+    animation: scales 1s;
+}
+
+
+
+
+@keyframes scales {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.infoListItem h3{
+    display: block;
+    width: 100%;
+    padding: 16px;
+    border: 1px black solid;
+    border-radius: 10px;
+}
+
+.infoListItem:hover img{
+    transform: scale(1.2);
+}
+
+.infoListItem:hover h3{
+    background-color: black;
+    color: #fff;
+}
+
+.infoListItem img {
+    transition: transform .5s;
+
+    margin-right: 16px;
+    width: 40px;
+    height: 40px;
+}
+
+.contactBtn {
+    width: 50%;
+    padding: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform .3s;
+}
+
+.contactBtn a {
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+}
+
+.contactBtn:hover {
+    background-color: #0056b3;
+    transform: scale(1.02)
+}
+
+.contactBtn:active {
+    background-color: #000000;
+    transform: scale(0.95)
+
+}
+
+.buttonWrapper {
+    margin-top: 20px;
+    text-align: center;
+}

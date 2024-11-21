@@ -1,12 +1,12 @@
 import React from "react";
 import styles from './Mainhead.module.css'
-import cont from '../../../container.module.css'
-import reactImg from '../../../img/Header/Mainhead/react.png'
-import jsImg from '../../../img/Header/Mainhead/js.svg'
-import sassImg from '../../../img/Header/Mainhead/sass.svg'
-import htmlImg from '../../../img/Header/Mainhead/html.svg'
-import cssImg from '../../../img/Header/Mainhead/css.svg'
-import gitImg from '../../../img/Header/Mainhead/git.svg'
+import cont from '../../../../container.module.css'
+import reactImg from '../../Mainhead/react.png'
+import jsImg from '../../Mainhead/js.svg'
+import sassImg from '../../Mainhead/sass.svg'
+import htmlImg from '../../Mainhead/html.svg'
+import cssImg from '../../Mainhead/css.svg'
+import gitImg from '../../Mainhead/git.svg'
 
 
 
@@ -36,7 +36,7 @@ function Mainhead() {
                 </div>
 
                 <div className={styles.imgWrapper}>
-                    <img src={require('./img/im.png')} alt="Profile Image"/>
+                    <img src={require('../../Mainhead/im.png')} alt="Profile Image"/>
                 </div>
             </div>
 
