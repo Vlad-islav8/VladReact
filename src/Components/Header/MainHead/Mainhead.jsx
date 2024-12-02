@@ -1,6 +1,7 @@
 import React from "react";
-import styles from './Mainhead.module.css'
 import cont from '../../../container.module.css'
+import styles from './Mainhead2.module.css'
+
 import reactImg from '../../../img/Header/Mainhead/react.png'
 import jsImg from '../../../img/Header/Mainhead/js.svg'
 import sassImg from '../../../img/Header/Mainhead/sass.svg'

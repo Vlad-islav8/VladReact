@@ -12,7 +12,7 @@ export function Navbar() {
     };
 
     return (
-        <div>
+        <div className={styles.navbarPos}>
             <nav className={styles.navbar}>
                 <div className={`${cont.container} ${styles.navbarCont}` }>
                     <div className={styles.logo}>

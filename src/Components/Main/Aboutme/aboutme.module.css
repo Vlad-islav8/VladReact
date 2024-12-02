@@ -5,8 +5,11 @@
     z-index: 99999;
 }
 
-.aboutme:hover {
-    transform: translateY(-128px);
+
+
+.infoListItemSong {
+    display: block;
+    background-color: black;
 }
 
 .aboutme:hover .aboutmeWrapper{

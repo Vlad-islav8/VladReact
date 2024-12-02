@@ -47,7 +47,6 @@ export function Aboutme() {
                                 <img src={whyIcons} alt="картинка"/>
                                 <h3>Фронтендом занимаюсь чуть больше года</h3>
                             </NavLink>
-
                         </ul>
                         <div className={styles.buttonWrapper}>
                             <button className={styles.contactBtn}><a href="https://t.me/Mylitlezummer">Связаться со
@@ -55,6 +54,7 @@ export function Aboutme() {
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     )
