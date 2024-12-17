@@ -1,5 +1,5 @@
 import React from "react";
-import styles from './Aboutme.module.css'
+import styles from './aboutme.module.css'
 import cont from '../../../container.module.css'
 import mePhoto1 from '../../../img/Main/me.jpg'
 import mePhoto2 from '../../../img/Main/me2.jpg'

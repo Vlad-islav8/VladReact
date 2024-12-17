@@ -1,0 +1,63 @@
+.techItem {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.techItem:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.techIcon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #00ff87;
+    transition: all 0.3s ease;
+}
+
+.techItem:hover .techIcon {
+    transform: scale(1.2);
+    color: #60efff;
+}
+
+.techItem h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.techItem p {
+    font-size: 1rem;
+    color: #b3b3b3;
+    line-height: 1.6;
+}
+
+/* Анимация появления элементов */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.techItem {
+    animation: fadeInUp 0.6s ease forwards;
+    opacity: 0;
+}
+
+.techItem:nth-child(1) { animation-delay: 0.1s; }
+.techItem:nth-child(2) { animation-delay: 0.2s; }
+.techItem:nth-child(3) { animation-delay: 0.3s; }
+.techItem:nth-child(4) { animation-delay: 0.4s; }
+.techItem:nth-child(5) { animation-delay: 0.5s; }
+.techItem:nth-child(6) { animation-delay: 0.6s; }
