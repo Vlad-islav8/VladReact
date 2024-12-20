@@ -4,11 +4,11 @@ import {Aboutme} from "./Aboutme/Aboutme";
 import Technologies from "./Technologies/Technologies";
 
 
-export function Main() {
+export function Main(props) {
     return (
         <div className={styles.main}>
             <Aboutme />
-            <Technologies />
+            <Technologies data={props.state.data}/>
         </div>
     )
 }
