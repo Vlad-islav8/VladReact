@@ -9,14 +9,10 @@ import why from '../../../img/Main/Why.png'
 import whyIcons from '../../../img/Main/whyIcon.svg'
 import { NavLink, Routes, Route } from "react-router-dom";
 
-const activeStyles = {
-    backgroundColor: '#000000'
-}
-
 export function Aboutme() {
 
     return (
-        <div className={styles.aboutme}>
+        <div className={styles.aboutme} id="aboutme">
             <div className={cont.container}>
                 <div className={styles.aboutmeHead}>
                     <span>О себе</span>

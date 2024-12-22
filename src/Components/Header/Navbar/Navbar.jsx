@@ -21,8 +21,8 @@ export function Navbar() {
                     </div>
 
                     <div className={styles.navigation}>
-                        <a href='#'>Кнопка</a>
-                        <a href='#'>Кнопка</a>
+                        <a href='#aboutme'>О себе</a>
+                        <a href='#technologies'>Технологии</a>
                         <a href='#'>Кнопка</a>
                         <a href='#'>Кнопка</a>
                         <a href='#'>Кнопка</a>

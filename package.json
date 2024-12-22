@@ -1,6 +1,7 @@
 {
   "name": "vladreact",
   "version": "0.1.0",
+  "homepage": "https://Vlad-islav8.github.io/VladReact",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",

@@ -30,7 +30,7 @@ export default function Technologies(props) {
     }
     return (
         <>
-            <div className={styles.technologies}>
+            <div className={styles.technologies} id="technologies">
                 <div className={cont.container}>
                     <div className={styles.techHead}>
                         <h2>Мой технологический стек</h2>

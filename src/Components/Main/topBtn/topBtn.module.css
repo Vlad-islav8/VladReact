@@ -1,0 +1,49 @@
+.topBtn {
+
+    position: fixed;
+    bottom: 10px;
+    right: 100px;
+    background: none;
+    backdrop-filter: blur(10px);
+    opacity: .8;
+    border-radius: 10px ;
+    transition: opacity .5s, border-radius .2s, transform .5s, bottom .5s;
+    background: linear-gradient(45deg, #00ff87, #60efff);
+}
+
+.topBtn:hover {
+    opacity: 1;
+    bottom: 20px;
+}
+
+.topBtn:active {
+    opacity: 1;
+}
+
+
+.topBtn a {
+    background: none;
+    border: none;
+}
+
+.topBtn a img {
+    width: 100px;
+    height: 100px;
+    transition: transform .2s;
+    transform: translateY(-10px) scale(0.9);
+
+}
+
+.topBtn a img:active {
+    transform: translateY(-10px) scale(0.8);
+
+}
+
+.topBtn a img:hover {
+    transform: translateY(0) scale(1);
+
+}
+
+.notActive {
+    display: none;
+}
